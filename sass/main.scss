@@ -1,0 +1,18 @@
+@import "globals/base"; //base includes grid styles and colors
+@import "globals/typography";
+@import "globals/utilities";
+
+@import "layout/header";
+@import "layout/about";
+@import "layout/workflow";
+@import "layout/features";
+@import "layout/packages";
+@import "layout/history";
+@import "layout/projects";
+@import "layout/team";
+@import "layout/support";
+@import "layout/hire";
+@import "layout/footer";
+
+@import "components/navigation";
+@import "components/button";
