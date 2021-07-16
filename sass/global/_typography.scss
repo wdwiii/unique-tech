@@ -1,0 +1,34 @@
+/*==============================
+        Font Families
+==============================*/
+
+$font-display: 'Open Sans', sans-serif; // Regular 400 || Bold 700
+//Open Sans is used exclusivly
+$font-primary: 'Roboto', sans-serif; // Light 300 || Regular 400 || Medium 500
+//Roboto is the primary font used in this project. Declared on h1, h3, h4, p, span, and btn--basic and btn--premium elements
+font-family: 'Source Sans Pro', sans-serif; // Bold 700
+//Sans Pro is used for buttons, hire tagline and 
+
+/*==============================
+        Global Font Styles
+==============================*/
+
+html {
+    font-size: 62.5%; //This will set the root font-size to 10px
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/*==============================
+            Headings
+==============================*/
+
+/*==============================
+            Links
+==============================*/
+
+/*==============================
+            Paragrapgh
+==============================*/
