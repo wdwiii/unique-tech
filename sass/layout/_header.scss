@@ -1,0 +1,10 @@
+.header {
+    background: $color-primary;
+    color: $color-white;
+    display: grid;
+        grid-template-columns: 2rem [header-start] 1fr [header-end] 2rem;
+
+    & > * {
+        grid-column: header-start / header-end;
+    }
+}
