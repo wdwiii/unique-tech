@@ -1,0 +1,13 @@
+.workflow {
+    display: flex;
+    margin-top: 5rem;
+
+
+    &__graphic {
+        @include overlay;
+
+        img {
+            width: 100%;
+        }
+    }
+}
