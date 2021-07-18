@@ -5,6 +5,9 @@
             Grid
 ==============================*/
 /*==============================
+            Mixins
+==============================*/
+/*==============================
         Font Families
 ==============================*/
 /*==============================
@@ -20,7 +23,7 @@ body {
 /*==============================
             Headings
 ==============================*/
-.heading-1, .heading-2, .heading-3, .heading-4 {
+.heading-1, .heading-2, .heading-3 {
   text-transform: uppercase; }
 
 .heading-2 {
@@ -65,6 +68,43 @@ body {
   .about__content {
     display: flex;
     flex-direction: column; }
+
+.workflow {
+  display: flex;
+  margin-top: 5rem; }
+  .workflow__graphic {
+    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23aab2bd' fill-opacity='.4 ' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E"); }
+    .workflow__graphic img {
+      width: 100%; }
+
+.features {
+  display: grid;
+  grid-template-columns: 5rem [features-start] 1fr [features-end] 5rem;
+  grid-row-gap: 2rem;
+  margin: 5rem 0; }
+  .features .feature {
+    display: grid;
+    grid-template-columns: [icon-start] min-content [icon-end text-start] 1fr [text-end];
+    grid-template-rows: repeat(2, min-content);
+    grid-column-gap: 1.5rem;
+    font-weight: 300;
+    grid-column: features-start / features-end; }
+    .features .feature__icon {
+      grid-column: icon-start / icon-end;
+      fill: #363636;
+      height: 4rem;
+      width: 4rem; }
+    .features .feature__title {
+      align-self: center;
+      grid-column: text-start / text-end;
+      grid-row: 1 / span 1;
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin: 0; }
+    .features .feature__text {
+      grid-column: text-start / text-end;
+      grid-row: 2 / span 1;
+      margin: 0; }
 
 .logo {
   color: inherit;
