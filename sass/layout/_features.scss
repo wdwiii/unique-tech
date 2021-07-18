@@ -2,7 +2,11 @@
     display: grid;
         grid-template-columns: 5rem [features-start] 1fr [features-end] 5rem;
         grid-row-gap: 2rem;
-    margin: 5rem 0;
+    margin: 3rem 0;
+
+    .heading-2 {
+        grid-column: features-start / features-end;
+    }
 
     .feature {
         display: grid;
@@ -11,6 +15,7 @@
             grid-column-gap: 1.5rem;
         font-weight: 300;
         grid-column: features-start / features-end;
+
 
 
         &__icon {
@@ -32,6 +37,7 @@
         &__text {
             grid-column: text-start / text-end;
             grid-row: 2 / span 1;
+            line-height: 2rem;
             margin: 0;
         }
     }
