@@ -35,14 +35,16 @@ body {
 
 .heading-2 {
     @extend %heading;
+    align-self: center;
     background: $color-gray-dark;
     color: $color-white;
-    display: none;
+    display: inline-block;
     font-family: $font-display-1;
     font-size: 2rem;
     font-weight: 600;
     justify-self: center;
     padding: 1rem 3.5rem;
+    text-align: center;
 }
 
 .heading-3 {
