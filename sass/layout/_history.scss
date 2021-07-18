@@ -1,0 +1,23 @@
+.history {
+    @include overlay;
+    display: grid;
+        grid-template-columns: [full-start] 3rem [history-start] 1fr [history-end] 3rem [full-end];
+    padding: 4rem 0;
+
+    &__photo {
+        background: $color-white;
+        grid-column: full-start / full-end;
+        padding: 2rem;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__content{
+        display: flex;
+            align-items: center;
+            flex-direction: column;
+        grid-column: history-start / history-end;
+    }
+}
