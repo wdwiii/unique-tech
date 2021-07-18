@@ -1,0 +1,17 @@
+.logo {
+    color: inherit;
+    display: inline-block;
+    font-size: 2.6rem;
+    font-weight: 600;
+    margin: 2rem;
+    text-transform: uppercase;
+
+    &--unique {
+        border: 3px solid $color-primary-light;
+        padding: .5rem 1rem;
+    }
+
+    &--tech {
+        color: $color-gray-dark;
+    }
+}
