@@ -1,0 +1,30 @@
+.btn {
+    display: inline-block;
+    font-family: $font-display-2;
+    font-weight: 400;
+    margin: 0 auto;
+    text-transform: uppercase;
+
+    &:link,
+    &:visited {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    &--light {
+        background-color: $color-primary;
+        padding: 1rem 2rem;
+
+        &:link,
+        &:visited {
+            color: $color-gray-dark;
+        }
+    }
+
+    &--dark {
+        background-color: $color-gray-dark;
+        display: none;
+        padding: 1rem;
+        text-transform: capitalize;
+    }
+}
