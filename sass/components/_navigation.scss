@@ -1,0 +1,39 @@
+.navigation {
+    display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    //padding: 0 2rem;
+
+    &__ph {
+        background: $color-white;
+        height: 3px;
+        position: relative;
+        width: 2rem;
+
+        &::before,
+        &::after {
+            background: $color-white;
+            content: "";
+            display: block;
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+
+        &::before {
+            left: 0;
+            top: -.75rem;
+        }
+
+        &::after {
+            left: 0;
+            top: .75rem;
+        }
+    }
+
+    &__list {
+        display: none; //Just for the purpose of styling rest of div
+        list-style: none;
+    }
+}
