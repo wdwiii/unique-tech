@@ -1,10 +1,13 @@
 .workflow {
+    @include overlay;
     display: flex;
+        flex-direction: column;
+        justify-content: center;
     margin-top: 5rem;
 
 
     &__graphic {
-        @include overlay;
+
 
         img {
             width: 100%;
