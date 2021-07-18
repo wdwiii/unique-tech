@@ -5,7 +5,7 @@
 
 $font-primary: 'Roboto', sans-serif; // Light 300 || Regular 400 || Medium 500
 //Roboto is the primary font used in this project. Declared on h1, h3, h4, p, span, and btn--basic and btn--premium elements
-$font-display-1: 'Source Sans Pro', sans-serif; // Bold 700
+$font-display-1: 'Source Sans Pro', sans-serif; // Regular 400 || Semi-Bold 600 || Bold 700
 //Sans Pro is used for buttons, hire tagline and h2 elements
 $font-display-2: 'Open Sans', sans-serif; // Regular 400 || Bold 700
 //Open Sans is used exclusivly on btn--yellow, btn--white and btn--standard
@@ -25,6 +25,33 @@ body {
 /*==============================
             Headings
 ==============================*/
+%heading {
+    text-transform: uppercase;
+}
+
+.heading-1 {
+    @extend %heading;
+}
+
+.heading-2 {
+    @extend %heading;
+    background: $color-gray-dark;
+    color: $color-white;
+    display: none;
+    font-family: $font-display-1;
+    font-size: 2rem;
+    font-weight: 600;
+    justify-self: center;
+    padding: 1rem 3.5rem;
+}
+
+.heading-3 {
+    @extend %heading;
+}
+
+.heading-4 {
+    @extend %heading;
+}
 
 /*==============================
             Links
@@ -33,3 +60,8 @@ body {
 /*==============================
             Paragrapgh
 ==============================*/
+.paragraph {
+    font-weight: 300;
+    line-height: 2.5rem;
+    margin: 0 0 1rem 0;
+}
