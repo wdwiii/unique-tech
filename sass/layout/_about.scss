@@ -9,9 +9,11 @@
 
     &__picture {
         background-color: $color-gray-light-2;
-        margin-top: 4rem;
-        padding: 2rem 6rem;
-        max-width: 30rem;
+        @include vector-sizing;
+
+        &:not(:first-of-type) {
+            margin-top: 4rem;
+        }
     }
 
     &__content {
