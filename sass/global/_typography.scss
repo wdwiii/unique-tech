@@ -51,6 +51,12 @@ body {
     @extend %heading;
 }
 
+.heading-4 {
+    @extend %heading;
+    color: $color-white;
+    margin: 1rem 0;
+}
+
 
 /*==============================
             Links
