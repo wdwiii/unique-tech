@@ -23,7 +23,7 @@ body {
 /*==============================
             Headings
 ==============================*/
-.heading-1, .heading-2, .heading-3 {
+.heading-1, .heading-2, .heading-3, .heading-4 {
   text-transform: uppercase; }
 
 .heading-2 {
@@ -37,6 +37,10 @@ body {
   justify-self: center;
   padding: 1rem 3.5rem;
   text-align: center; }
+
+.heading-4 {
+  color: #fdfcfc;
+  margin: 1rem 0; }
 
 /*==============================
             Links
@@ -169,6 +173,77 @@ body {
     font-size: 1.8rem;
     font-weight: 500; }
 
+.support {
+  display: grid;
+  grid-template-columns: 3rem [support-start] 1fr [support-end] 3rem;
+  justify-content: center;
+  margin: 3rem 0; }
+  .support > * {
+    grid-column: support-start / support-end; }
+  .support__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .support__content .btn {
+      margin-top: 2rem; }
+
+.hire {
+  background: linear-gradient(rgba(255, 192, 56, 0.6), rgba(255, 192, 56, 0.6)), url("../img/hire/hire-1x.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  height: 50rem; }
+  .hire__content {
+    background: #ffc038;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+    font-weight: 500;
+    padding: 2rem 0; }
+  .hire__tagline {
+    color: #fdfcfc;
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+  .hire .btn {
+    margin: 0; }
+
+.footer {
+  background-color: #363636;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  justify-items: center;
+  padding: 3rem 0 1rem; }
+  .footer__nav {
+    text-align: center; }
+  .footer__list {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0; }
+  .footer__link:link, .footer__link:visited {
+    color: #aab2bd;
+    text-decoration: none; }
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 0;
+  width: 70%; }
+  .social-media__icon {
+    background-color: #ffc038;
+    fill: #fdfcfc;
+    height: 2.5rem;
+    padding: 1rem;
+    width: 2.5rem; }
+
+.copyright {
+  color: #aab2bd;
+  width: 90%; }
+  .copyright__link:link, .copyright__link:visited {
+    color: #fdfcfc;
+    text-decoration: none; }
+
 .logo {
   color: inherit;
   display: inline-block;
@@ -214,13 +289,13 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   margin: 0 auto;
+  padding: 1rem 2rem;
   text-transform: uppercase; }
   .btn:link, .btn:visited {
     color: #fdfcfc;
     text-decoration: none; }
   .btn--light {
-    background-color: #ffc038;
-    padding: 1rem 2rem; }
+    background-color: #ffc038; }
     .btn--light:link, .btn--light:visited {
       color: #363636; }
   .btn--dark {
@@ -228,3 +303,5 @@ body {
     display: none;
     padding: 1rem;
     text-transform: capitalize; }
+  .btn--white {
+    background-color: #fdfcfc; }
