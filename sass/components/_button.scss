@@ -3,6 +3,7 @@
     font-family: $font-display-2;
     font-weight: 400;
     margin: 0 auto;
+    padding: 1rem 2rem;
     text-transform: uppercase;
 
     &:link,
@@ -13,7 +14,6 @@
 
     &--light {
         background-color: $color-primary;
-        padding: 1rem 2rem;
 
         &:link,
         &:visited {
@@ -26,5 +26,9 @@
         display: none;
         padding: 1rem;
         text-transform: capitalize;
+    }
+
+    &--white {
+        background-color: $color-white;
     }
 }
