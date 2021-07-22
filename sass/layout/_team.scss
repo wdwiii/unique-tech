@@ -2,29 +2,38 @@
     background-color: $color-primary;
     display: flex;
     flex-direction: column;
-    padding: 5rem 0;
+    @extend .section-padding;
 
 }
 
 .member {
+    color: $color-white;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2.5rem;
+    text-transform: uppercase;
 
     &__avatar {
         background: $color-gray-light-2;
         border-radius: 50%;
+        margin-bottom: 1rem;
     }
 
     &__photo {
-        height: 10rem;
+        height: 15rem;
         padding: 2.25rem;
         position: relative;
-        width: 10rem;
+        width: 15rem;
     }
 
     &__name {
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-weight: 500;
+    }
+
+    &__position {
+        font-size: 1.8rem;
+        font-weight: 300;
     }
 }
