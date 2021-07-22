@@ -1,15 +1,24 @@
 .projects {
     background-color: $color-gray-light-2;
-    @include vector-sizing;
+    display: grid;
+        grid-template-columns: 3rem [projects-start] 1fr [projects-end] 3rem;
+        justify-items: center;
+    @extend .section-padding;
+
+    & > * {
+        grid-column: projects-start / projects-end;
+    }
 }
 
 .project {
-    &:not(:last-child) {
-        margin-bottom: 5rem;
-    }
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+    width: 100%;
 
     &__image {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
+        @include vector-sizing;
     }
 
     &__name {
