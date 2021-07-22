@@ -2,7 +2,7 @@
     display: grid;
         grid-template-columns: 5rem [features-start] 1fr [features-end] 5rem;
         grid-row-gap: 2rem;
-    margin: 3rem 0;
+        @extend .section-padding;
 
     .heading-2 {
         grid-column: features-start / features-end;

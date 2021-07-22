@@ -2,7 +2,7 @@
     @include overlay;
     display: grid;
         grid-template-columns: [full-start] 3rem [history-start] 1fr [history-end] 3rem [full-end];
-    padding: 4rem 0;
+        @extend .section-padding;
 
     &__photo {
         background: $color-white;

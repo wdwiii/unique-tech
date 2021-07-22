@@ -2,7 +2,7 @@
     display: grid;
         grid-template-columns: 3rem [support-start] 1fr [support-end] 3rem;
         justify-content: center;
-    margin: 3rem 0;
+    @extend .section-padding;
 
 
     & > * {
