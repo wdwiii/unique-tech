@@ -1,4 +1,6 @@
+@import "resets/resets";
 @import "global/base"; //base includes grid styles and colors
+@import "global/mixins";
 @import "global/typography";
 @import "global/utilities";
 
