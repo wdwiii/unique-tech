@@ -1,6 +1,8 @@
 .about {
     display: grid;
         grid-template-columns: 3rem [about-start] 1fr [about-end] 3rem;
+        justify-items: center;
+   @extend .section-padding;
 
     & > * {
     //Selects all direct children of parent .about div
@@ -9,15 +11,19 @@
 
     &__picture {
         background-color: $color-gray-light-2;
+        margin-top: 2rem;
+        width: 100%;
         @include vector-sizing;
 
-        &:not(:first-of-type) {
-            margin-top: 4rem;
+        &:first-of-type {
+            margin-top: 0;
         }
     }
 
     &__content {
         display: flex;
-        flex-direction: column;
+            align-items: center;
+            flex-direction: column;
+        max-width: 50rem;
     }
 }
