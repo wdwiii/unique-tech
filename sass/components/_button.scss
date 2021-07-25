@@ -1,5 +1,6 @@
 .btn {
-    display: inline-block;
+    display: flex;
+        align-items: center;
     font-family: $font-display-2;
     font-weight: 400;
     margin: 2rem auto;
@@ -24,8 +25,22 @@
     &--dark {
         background-color: $color-gray-dark;
         display: none;
-        padding: 1rem;
+        padding: 1rem 2rem;
         text-transform: capitalize;
+
+        @media only screen and (min-width: $bp-tablet-sm) {
+            display: flex;
+            margin: 2rem 0;
+            width: fit-content;
+        }
+    }
+
+    &__icon {
+    //Styles for airplane icon inside .btn
+        fill: $color-white;
+        height: 2rem;
+        margin-left: 1rem;
+        width: 2rem;
     }
 
     &--white {
