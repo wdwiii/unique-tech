@@ -1,4 +1,16 @@
 /*==============================
+            Breakpoints
+==============================*/
+//Default styles are set for iPhone X (375px/23.44em)
+$bp-mobile-sm: 21.875em;
+$bp-mobile-lrg: 28.125em;
+$bp-tablet-sm: 37.5em;
+$bp-tablet-med: 48em;
+$bp-tablet-lrg: 56.25em;
+$bp-desktop-sm: 64em;
+
+
+/*==============================
             Colors
 ==============================*/
 $color-primary: #ffc038;
@@ -22,3 +34,5 @@ $color-white: #fdfcfc;
 img { 
     width: 100%;
 }
+
+
