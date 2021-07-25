@@ -15,7 +15,19 @@ $font-display-2: 'Open Sans', sans-serif; // Regular 400 || Bold 700
 ==============================*/
 
 html {
-    font-size: 62.5%; //This will set the root font-size to 10px
+    font-size: 62.5%; //This default the root font-size to 10px
+
+    @media only screen and (max-width: $bp-mobile-sm) {
+        font-size: 56.25%; //This will set the root font-size to 9px at 350px
+    }
+
+    @media only screen and (min-width: $bp-tablet-lrg) {
+        font-size: 75%; //This will set the root font-size to 10.65px at 930px
+    }
+
+    @media only screen and (min-width: 75em) {
+        font-size: 80%; //This will set the root font-size to 12.8px at 1200 px
+    }
 }
 
 body {
@@ -32,6 +44,7 @@ body {
 
 .heading-1 {
     @extend %heading;
+    font-size: 3.15rem;
     margin-bottom: 2rem;
 }
 
