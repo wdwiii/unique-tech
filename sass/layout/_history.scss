@@ -1,16 +1,38 @@
 .history {
     @include overlay;
-    display: grid;
-        grid-template-columns: [full-start] 3rem [history-start] 1fr [history-end] 3rem [full-end];
-        @extend .section-padding;
+    display: flex;
+        flex-direction: column;
+    padding: 4rem 2rem;
+
+    @media only screen and (min-width: $bp-tablet-med) {
+        flex-direction: row;
+    }
+
+    @media only screen and (min-width: $bp-desktop-sm) {
+        padding: 4rem 5rem;
+    }
+
+    @media only screen and (min-width: $bp-desktop-med) {
+        padding: 4rem 10rem;
+    }
 
     &__photo {
-        background: $color-white;
-        grid-column: full-start / full-end;
-        padding: 2rem;
+        flex: 0 0 50%;
+
+        @media only screen and (min-width: $bp-tablet-med) {
+            margin-left: 2rem;
+        }
 
         img {
+            background: $color-white;
+            padding: 2rem;
             width: 100%;
+        }
+    }
+
+    .heading-2 {
+        @media only screen and (min-width: $bp-tablet-med) {
+            align-self: start;
         }
     }
 
@@ -18,6 +40,6 @@
         display: flex;
             align-items: center;
             flex-direction: column;
-        grid-column: history-start / history-end;
+        padding: 0 2rem;
     }
 }
