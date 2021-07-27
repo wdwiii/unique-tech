@@ -22,11 +22,15 @@ html {
     }
 
     @media only screen and (min-width: $bp-tablet-lrg) {
-        font-size: 75%; //This will set the root font-size to 10.65px at 930px
+        //font-size: 75%; //This will set the root font-size to 10.65px at 930px
     }
 
-    @media only screen and (min-width: 75em) {
-        font-size: 80%; //This will set the root font-size to 12.8px at 1200 px
+    @media only screen and (min-width: $bp-desktop-med) {
+       // font-size: 80%; //This will set the root font-size to 12.8px at 1200 px
+    }
+
+    @media only screen and (min-width: $bp-desktop-lrg) {
+       // font-size: 90%; //This will set the root font-size to 14.4px at 1400 px
     }
 }
 
@@ -44,7 +48,7 @@ body {
 
 .heading-1 {
     @extend %heading;
-    font-size: 3.15rem;
+    font-size: 3rem;
     margin-bottom: 2rem;
 }
 
@@ -52,6 +56,8 @@ body {
     @extend %heading;
     align-self: center;
     background: $color-gray-dark;
+    //box-shadow: .5rem .5rem 1rem rgba($color-gray-dark, .5);
+    box-shadow: $default-shadow;
     color: $color-white;
     display: inline-block;
     font-family: $font-display-1;
