@@ -4,11 +4,18 @@
     flex-direction: column;
     @extend .section-padding;
 
+    &__members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 .member {
     color: $color-white;
     display: flex;
+        flex: 0 0 18rem;
         flex-direction: column;
         align-items: center;
         margin-bottom: 2.5rem;
