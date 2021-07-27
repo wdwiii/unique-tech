@@ -2,13 +2,14 @@
             Breakpoints
 ==============================*/
 //Default styles are set for iPhone X (375px/23.44em)
-$bp-mobile-sm: 21.875em;
-$bp-mobile-lrg: 28.125em;
-$bp-tablet-sm: 37.5em;
-$bp-tablet-med: 48em;
-$bp-tablet-lrg: 56.25em;
-$bp-desktop-sm: 64em;
-
+$bp-mobile-sm: 21.875em; //350px
+$bp-mobile-lrg: 28.125em; //450px
+$bp-tablet-sm: 37.5em; //600px
+$bp-tablet-med: 48em; //768px
+$bp-tablet-lrg: 56.25em; //900px 
+$bp-desktop-sm: 64em; //1024px
+$bp-desktop-med: 75em; //1200px 
+$bp-desktop-lrg: 87.5em; //1400px 
 
 /*==============================
             Colors
@@ -36,3 +37,7 @@ img {
 }
 
 
+/*==============================
+            Misc
+==============================*/
+$default-shadow: .5rem .5rem 1.5rem rgba($color-gray-dark, .5);
