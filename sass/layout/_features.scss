@@ -1,8 +1,18 @@
 .features {
     display: grid;
-        grid-template-columns: 5rem [features-start] 1fr [features-end] 5rem;
+        grid-template-columns: [features-start] 1fr [features-end];
         grid-row-gap: 2rem;
-        @extend .section-padding;
+    padding: 4rem 3rem;
+
+        @media only screen and (min-width: $bp-tablet-sm) {
+                grid-column-gap: 3rem;
+                grid-template-columns: [features-start] repeat(auto-fit, [col-start] minmax(25rem, 1fr) [col-end]) [features-end];
+            }
+
+            @media only screen and (min-width: $bp-tablet-lrg) {
+                grid-column-gap: 3rem;
+                grid-template-columns: [features-start] repeat(auto-fit, [col-start] minmax(30rem, 1fr) [col-end]) [features-end];
+            }
 
     .heading-2 {
         grid-column: features-start / features-end;
@@ -14,15 +24,13 @@
             grid-template-rows: repeat(2, min-content);
             grid-column-gap: 1.5rem;
         font-weight: 300;
-        grid-column: features-start / features-end;
-
-
+        
 
         &__icon {
             grid-column: icon-start / icon-end;
             fill: $color-gray-dark;
-            height: 4rem;
-            width: 4rem;
+            height: 2.5rem;
+            width: 2.5rem;
         }
 
         &__title {
