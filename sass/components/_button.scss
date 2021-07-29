@@ -1,12 +1,15 @@
 .btn {
     box-shadow: $default-shadow;
+    cursor: pointer;
     display: flex;
         align-items: center;
+        flex-shrink: 0;
     font-family: $font-display-2;
     font-weight: 400;
     margin: 2rem auto;
     padding: 1rem 2rem;
     text-transform: uppercase;
+    width: fit-content;
 
     &:link,
     &:visited {
@@ -32,7 +35,7 @@
         @media only screen and (min-width: $bp-tablet-sm) {
             display: flex;
             margin: 2rem 0;
-            width: fit-content;
+            //width: fit-content;
         }
     }
 
