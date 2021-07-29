@@ -63,6 +63,10 @@
         display: flex;
             align-items: center;
             flex-direction: column;
-        max-width: 50rem;
+        max-width: 35rem;
+
+        @media only screen and (min-width: $bp-tablet-med) {
+            max-width: 50rem;
+        }
     }
 }
