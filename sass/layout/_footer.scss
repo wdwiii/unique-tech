@@ -1,14 +1,23 @@
 .footer {
     background-color: $color-gray-dark;
-    display: grid;
-        grid-template-columns: 1fr;
+    @extend .section-padding;
+    
+    &__nav-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(19.5rem, 1fr));
         justify-content: center;
         justify-items: center;
-    @extend .section-padding;
+        margin: 0 auto;
+        max-width: 80rem;
 
-        &__nav {
-            text-align: center;
+        @media screen and (min-width: $bp-tablet-med) {
+            grid-template-columns: repeat(4, 1fr);
         }
+    }
+
+    &__nav {
+        text-align: center;
+    }
 
     &__list {
         list-style: none;
@@ -30,8 +39,9 @@
 .social-media {
     display: flex;
         justify-content: space-between;
+    grid-column: 1 / -1;
     margin: 1.5rem auto;
-    width: 70%;
+    width: 28rem;
 
     &__icon {
         background-color: $color-primary;
@@ -44,6 +54,9 @@
 
 .copyright {
     color: $color-gray-1;
+    grid-column: 1 / -1;
+    margin: 0 auto;
+    text-align: center;
     width: 90%;
 
     &__link:link,
