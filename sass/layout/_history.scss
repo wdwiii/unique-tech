@@ -17,10 +17,17 @@
     }
 
     &__photo {
-        flex: 0 0 50%;
+        margin: 0 auto 3rem;
+        max-width: 50rem;
+        
+        @media only screen and (min-width: $bp-mobile-lrg) and (max-width: $bp-tablet-med) {
+            max-width: 45rem;
+        }
 
         @media only screen and (min-width: $bp-tablet-med) {
-            margin-left: 2rem;
+            flex: 0 0 45%;
+            margin: 0 0 0 2rem;
+            max-width: 45rem;
         }
 
         img {
