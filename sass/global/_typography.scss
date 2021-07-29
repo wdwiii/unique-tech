@@ -25,8 +25,8 @@ html {
         //font-size: 75%; //This will set the root font-size to 10.65px at 930px
     }
 
-    @media only screen and (min-width: $bp-desktop-med) {
-       // font-size: 80%; //This will set the root font-size to 12.8px at 1200 px
+    @media only screen and (min-width: $bp-desktop-sm) {
+        font-size: 70.5%; //This will set the root font-size to 11.28px at 1024  px
     }
 
     @media only screen and (min-width: $bp-desktop-lrg) {
@@ -56,7 +56,6 @@ body {
     @extend %heading;
     align-self: center;
     background: $color-gray-dark;
-    //box-shadow: .5rem .5rem 1rem rgba($color-gray-dark, .5);
     box-shadow: $default-shadow;
     color: $color-white;
     display: inline-block;
@@ -66,6 +65,7 @@ body {
     justify-self: center;
     margin-bottom: 2.5rem;;
     padding: 1rem 3.5rem;
+    position: relative;
     text-align: center;
 }
 
