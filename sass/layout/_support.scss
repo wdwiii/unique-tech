@@ -1,21 +1,36 @@
 .support {
     display: grid;
-        grid-template-columns: 3rem [support-start] 1fr [support-end] 3rem;
+        grid-template-columns: [support-start content-start] 3fr [content-end img-start] 2fr [img-end support-end];
+        grid-row-gap: 2rem;
         justify-content: center;
-    @extend .section-padding;
+    padding: 4rem 3rem;
 
-
-    & > * {
+    .heading-2 {
         grid-column: support-start / support-end;
     }
 
     &__content {
         display: flex;
-        align-items: center;
-        flex-direction: column;
+            //align-items: center;
+            flex-direction: column;
+        grid-column: support-start / support-end;
+
+        @media screen and (min-width: $bp-tablet-med) {
+            grid-column: content-start / content-end;
+        }
 
         .btn {
             margin-top: 2rem;
+        }
+    }
+
+    &__picture {
+        display: none;
+        max-width: 48rem;
+
+        @media screen and (min-width: $bp-tablet-med) {
+            display: block;
+            grid-column: img-start / img-end;
         }
     }
 }
