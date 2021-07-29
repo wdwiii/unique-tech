@@ -1,14 +1,21 @@
 .projects {
+    display: flex;
+    flex-direction: column;
+    @extend .section-padding;
+
+    .heading-2 {
+        align-self: center;
+    }
+}
+
+.project-container {
     background-color: $color-gray-light-2;
     display: grid;
         grid-template-columns: [projects-start] repeat(auto-fit, 30rem) [projects-end];
         justify-content: center;
         justify-items: center;
-        @extend .section-padding;
-
-    .heading-2 {
-        grid-column: projects-start / projects-end;
-    }
+    margin-top: 2rem;
+    padding-bottom: 3rem;
 }
 
 .project {
@@ -18,7 +25,6 @@
     width: 100%;
 
     &__image {
-        margin-bottom: 2.5rem;
         @include vector-sizing;
     }
 
