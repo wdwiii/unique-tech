@@ -6,6 +6,38 @@
         grid-row-gap: 2rem;
         grid-template-columns: 3rem [header-start content-start] 2fr [content-end background-start] 3fr [background-end header-end] 3rem;
         padding: 1rem 0 3rem;
+    position: relative;
+
+    .heading-1 {
+        position: relative;
+        
+        @media screen and (min-width: $bp-tablet-med) {
+            //:before and ::after styles will create the arrow graphic at the end of the h1 element
+            &::before {
+                background-image: url("../img/curves/curve-h1.svg");
+                background-repeat: no-repeat;
+                content: "";
+                display: block;
+                height: 6rem;
+                position: absolute;
+                    left: 80%;
+                transform: rotate(13deg);
+                width: 25rem;
+            }
+
+            &::after {
+                background-image: url('../img/curves/plane.svg');
+                background-repeat: no-repeat;
+                content: "";
+                height: 2.75rem;
+                position: absolute;
+                left: 170%;
+                top: 31%;
+                transform: rotate(90deg);
+                width: 2.75rem;
+            }
+        }
+    }
 
     &__content {
         grid-column: header-start / header-end;
