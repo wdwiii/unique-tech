@@ -1,7 +1,7 @@
 .features {
     display: grid;
         grid-template-columns: [features-start] 1fr [features-end];
-        grid-row-gap: 2rem;
+        grid-row-gap: 5rem;
     padding: 4rem 3rem;
 
         @media only screen and (min-width: $bp-tablet-sm) {
